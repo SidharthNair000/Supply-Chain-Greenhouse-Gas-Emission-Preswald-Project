@@ -2,10 +2,9 @@ import pandas as pd
 import plotly.express as px
 from preswald import text, plotly
 
-# Load the data (replace with your actual data loading method)
+# Load the data 
 df = pd.read_csv('data/SupplyChain.csv')
 
-# Convert NAICS code to string for better handling
 df['2017 NAICS Code'] = df['2017 NAICS Code'].astype(str)
 
 # Emission Analysis Scatter Plot
